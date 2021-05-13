@@ -1,0 +1,28 @@
+/*          Let's Start To Do Some Inovatie Designing...               */
+*{
+	margin : 0;
+	padding : 0;
+
+}
+
+
+.backgroundImage{
+	margin: 3em;
+	background-color: #cccccc;
+	height: 720px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	position: relative;
+	background-image:  url('/static/ticketApp/IMAGES/image.jpg');
+
+
+}
+
+
+
+#row1 a {
+  display: block;
+  color: white;
+  padding: 8px;
+}
