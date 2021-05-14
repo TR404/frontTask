@@ -1,28 +1,267 @@
 /*          Let's Start To Do Some Inovatie Designing...               */
-*{
-	margin : 0;
-	padding : 0;
 
+/*------------------- nav ---------*/
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-
-.backgroundImage{
+.backImage {
 	margin: 3em;
 	background-color: #cccccc;
-	height: 720px;
+	height: 860px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
   	position: relative;
 	background-image:  url('/static/ticketApp/IMAGES/image.jpg');
 
+}
+
+.childBox{
+	display: inline-block;
+	width: 1500px;
+	height: 690px;
+	margin: 4em 3em 3em 9em;
+	border: 5px solid #78c543;   
+	border-radius: 25px; 
+	background-color: white; 
 
 }
 
 
+.socialSite {
+	height: 20px;
+	width: 20px;
 
-#row1 a {
+}
+
+
+/*.cartoonPic {*/
+/*	height: 200px;*/
+/*	width: 100%;*/
+/*	margin: 1em;*/
+
+/*}*/
+
+header {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+}
+
+header nav {
+  float: left;
+  width: 75%;
+  background: linear-gradient( 90deg, #78c543 0%, #79c541 100%);
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 0px 0px 50px 0px;
+}
+
+header nav .logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  height: 25px;
+  margin-top: -18px;
+}
+
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  width: auto;
+  line-height: 50px;
+  float: right;
+  padding: 0px 20px;
+}
+
+header nav ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0px 5px;
+  margin: 0px 5px;
+  transition: 0.5s all;
+  text-decoration: none;
+  transition-timing-function: linear;
+}
+
+header nav button:hover {
+  background: linear-gradient( 90deg, #4361bb 0%, #4759c7 100%);
+  transition: 0.5s all;
+  transition-timing-function: linear;
+}
+
+header nav button {
+  margin: 7px 20px;
+  padding: 10px 25px;
+  background: linear-gradient( 90deg, #4759c7 0%, #4361bb 100%);
+  border: unset;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+header nav button:focus {
+  outline: unset;
+}
+
+.user-detail {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.user-detail ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: right;
+  margin-right: 10px;
+}
+
+.user-detail ul li {
+  float: left;
+  margin: 0px 5px;
+  line-height: 50px;
+}
+
+.user-detail ul li a {
+  padding: 10px 20px;
+  background: linear-gradient( 90deg, #78c543 0%, #79c541 100%);
+  border: unset;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+header nav button:before {
   display: block;
-  color: white;
-  padding: 8px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: '';
+  color: #000 !important;
+  background: linear-gradient(to right top, #3f51b5, #2196f3);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
+
+header nav button:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+
+header nav button:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+
+.user-detail ul li a.login-back {
+  background: linear-gradient( 90deg, #4759c7 0%, #4361bb 100%) !important;
+  text-decoration: none;
+}
+
+.user-detail ul li:hover a {
+  background: linear-gradient( 90deg, #4759c7 0%, #4361bb 100%) !important;
+  transition: 0.5s all;
+  transition-timing-function: linear;
+}
+
+
+/*----------------- Social Media icone  ------------------*/
+
+.social-media-icone {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  bottom: 20px;
+  right: 0;
+}
+
+.social-media-icone ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.social-media-icone ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.social-media-icone ul li a {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.social-media-icone ul li a span {
+  width: 35px;
+  height: 35px;
+  float: left;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 2px;
+  background: #fff;
+}
+
+.social-media-icone ul li a span img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.img1{
+	height: 85px;
+	width:85px;
+
+}
+
+
+
