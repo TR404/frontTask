@@ -1,0 +1,48 @@
+{% extends 'ticketApp/basic.html' %}
+	{% block content %} 
+	{% load static %}
+	
+<div class = "backImage">
+	<div class = "childBox">
+
+		<div class = "cartoonPic">
+			<img class = "img1" src="{% static 'ticketApp/IMAGES/cartoonPic.png'%}" alt="">
+		</div>
+		<div class = "socialSites">
+		<ul>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/inst-icone.png'%}" alt="">instagram@insta.com</span></a></li>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/facebook-icone.png'%}" alt="">facebook@facebook.com</span></a></li>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/tiwwe-icone.png'%}" alt="">twiter@twitter.com</span></a></li>
+		</ul>  
+		</div>
+		
+		<div class = "personalDetailColor"><h3><b>Organization Details</h3></div>
+			
+	<form action = "{% url 'billingAddress' %}" method = "GET">
+	
+		</div>
+		<div class = "detailOrganization">
+
+			<div class = "labelColor7"><label id = "labelFont" for="fname">Organization name</label>
+ 	 <input id = "inputShape" type="text" id="fname" name="fname" value="John"></div><br><br>
+			
+ 	 		<div class = "labelColor8"><label id = "labelFont" for="Email">GSTIN</label>
+ 	 <input id = "inputShape" type="number" id="number1" name="number" value="8945786879"></div><br><br>
+ 	 		<div class = "labelColor9"><label id = "labelFont" for="email">Register address</label>
+ 	 <input id = "inputShape" type="text" id="address" name="address1" value="New Delhi"></div><br><br>
+ 	 		
+ 	 		<div class = "labelColor10"><label id = "labelFont" for="email">Upload gst certificate</label>
+ 	 <input id = "inputShape" type="text" id="address" name="address1" value="New Delhi"></div><br><br>
+
+		</div>
+		<div class = "submitButtons2">
+			<button type="button" class="btnLast">Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button type="submit" class= "btnLast">Save</button>
+	</form>		
+
+	
+	</div>	
+</div>		
+	
+	
+		{% endblock %}

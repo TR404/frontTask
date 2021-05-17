@@ -5,13 +5,19 @@ def index(request):
 	return render(request, 'ticketApp/index.html')
 	
 	
-def disputeTicket(request):
-	return render(request, 'ticketApp/disputeTicket.html')
+def organizationDetails(request):
+	return render(request, 'ticketApp/organizationDetails.html')
 
 	
-def generateTicket(request):
-	return render(request, 'ticketApp/generateTicket.html')
+def billingAddress(request):
+	return render(request, 'ticketApp/billingAddress.html')
 
 	
-def todayOffer(request):
-	return render(request, 'ticketApp/todayOffer.html')
+def paymentMethods(request):
+	return render(request, 'ticketApp/paymentMethods.html')
+	
+	
+def changePassword(request):
+	return render(request, 'ticketApp/changePassword.html')
+	
+

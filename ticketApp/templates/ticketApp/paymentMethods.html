@@ -1,0 +1,40 @@
+{% extends 'ticketApp/basic.html' %}
+	{% block content %} 
+	{% load static %}
+	
+<div class = "backImage">
+	<div class = "childBox">
+
+		<div class = "cartoonPic">
+			<img class = "img1" src="{% static 'ticketApp/IMAGES/cartoonPic.png'%}" alt="">
+		</div>
+		<div class = "socialSites">
+		<ul>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/inst-icone.png'%}" alt="">instagram@insta.com</span></a></li>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/facebook-icone.png'%}" alt="">facebook@facebook.com</span></a></li>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/tiwwe-icone.png'%}" alt="">twiter@twitter.com</span></a></li>
+		</ul>  
+		</div>
+		<div class = "personalDetailColor"><h3><b>Payment Methods</h3></div>
+				<div class = "paymentMethod">
+		<ul>
+			<li><a href="#"><span><img class = "paymentImage" src="{% static 'ticketApp/IMAGES/creditDebit.png'%}" alt=""><button type="button" class="btnPay">Debit Card/ Credit Card</button></span></a></li>
+			<li><a href="#"><span><img class = "paymentImage" src="{% static 'ticketApp/IMAGES/gpay.jpg'%}" alt=""><button type="button" class="btnPay">Google Pay</button></span></a></li>
+			<li><a href="#"><span><img class = "paymentImage" src="{% static 'ticketApp/IMAGES/paypal.png'%}" alt=""><button type="button" class="btnPay">Paypal</button></span></a></li>
+		</ul>  
+		</div>
+
+	<form action = "{% url 'changePassword' %}" method = "GET">
+		
+		
+				<div class = "submitButtons4">
+			<button type="button" class="btnLast">Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button type="submit" class= "btnLast">Save</button>
+	</form>	
+		
+	</div>
+</div>
+	
+	
+	
+		{% endblock %}

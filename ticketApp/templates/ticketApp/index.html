@@ -9,28 +9,59 @@
 </head>
 <body>
 <div class = "backImage">
-  <div class = "childBox">
-<br>
+	<div class = "childBox">
 
-	<table>
-  <tr>
-    <td rowspan="3">	<div class = "cartoonPic">
-		<img class = "img1" src="{% static 'ticketApp/IMAGES/cartoonPic.png'%}" alt="">
-	</div></td>
-    <td><a href="#"><span><img class = "socialSite" src="{% static 'ticketApp/IMAGES/facebook-icone.png'%}" alt="facebook.com">&nbsp;facebook@facebook.com</span></a></td>
-  </tr>
-  <tr>
-    <td><a href="#"><span><img class = "socialSite" src="{% static 'ticketApp/IMAGES/inst-icone.png'%}" alt=""></span></a>&nbsp;instagram@instagram.com</td>
-  </tr>
-  <tr>
-    <td><a href="#"><span><img class = "socialSite" src="{% static 'ticketApp/IMAGES/tiwwe-icone.png'%}" alt=""></span></a>&nbsp;twiter@twitter.com</td>
-  </tr>
-</table>
+		<div class = "cartoonPic">
+			<img class = "img1" src="{% static 'ticketApp/IMAGES/cartoonPic.png'%}" alt="">
+		</div>
+		<div class = "socialSites">
+		<ul>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/inst-icone.png'%}" alt="">instagram@insta.com</span></a></li>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/facebook-icone.png'%}" alt="">facebook@facebook.com</span></a></li>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/tiwwe-icone.png'%}" alt="">twiter@twitter.com</span></a></li>
+		</ul>  
+		</div>
+		
+		<div class = "personalDetailColor"><h3><b>Personal Details</h3></div>
+		<div class = "personalPhoto">
+	<form action = "{% url 'organizationDetails' %}" method = "GET">
+	<img id="frame" src="" />
+  	<div class="upload-btn-wrapper">
+  	<button class="btn1">UPLOAD</button>
+ 	<input type="file" onchange="preview()">
+	</div>
+
+
 	
+		</div>
+		<div class = "detailIntro">
+
+			<div class = "labelColor"><label id = "labelFont" for="fname">Username</label>
+ 	 <input id = "inputShape" type="text" id="fname" name="fname" value="John"></div><br><br>
+			<div class = "labelColor1"><label id = "labelFont" for="email">Email</label>
+ 	 <input id = "inputShape" type="email" id="email" name="email" value="email@email.com"></div><br><br>
+ 	 		<div class = "labelColor2"><label id = "labelFont" for="Email">Mobile</label>
+ 	 <input id = "inputShape" type="number" id="number1" name="number" value="8945786879"></div><br><br>
+ 	 		<div class = "labelColor3"><label id = "labelFont" for="email">Address 1</label>
+ 	 <input id = "inputShape" type="text" id="address" name="address1" value="New Delhi"></div><br><br>
+ 	 		<div class = "labelColor4"><label id = "labelFont" for="email">Address 2    </label>
+ 	 <input id = "inputShape" type="text" id="text" name="address2" value="New Delhi"></div><br><br>
+ 	 		<div class = "labelColor5"><label id = "labelFont" for="email">Id proof type</label>
+ 	 <input id = "inputShape" type="text" id="text" name="idProve" value="facscsvs"></div><br><br>
+ 	 		<div class = "labelColor6"><label id = "labelFont" for="email">Id number</label>
+ 	 <input id = "inputShape" type="text" id="idNumber" name="idNumber" value="45879 7485 2665"></div><br><br>
 	
-	
-</div>
+
+		</div>
+		<div class = "submitButtons">
+			<button type="button" class="btnLast">Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button type="submit" class= "btnLast">Save</button>
+	</form>		
+		</div>
+	</div>
 </div>
 </body>
 </html>
 	{% endblock %}
+	
+	

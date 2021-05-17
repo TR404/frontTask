@@ -1,0 +1,38 @@
+{% extends 'ticketApp/basic.html' %}
+	{% block content %} 
+	{% load static %}
+	
+<div class = "backImage">
+	<div class = "childBox">
+
+		<div class = "cartoonPic">
+			<img class = "img1" src="{% static 'ticketApp/IMAGES/cartoonPic.png'%}" alt="">
+		</div>
+		<div class = "socialSites">
+		<ul>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/inst-icone.png'%}" alt="">instagram@insta.com</span></a></li>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/facebook-icone.png'%}" alt="">facebook@facebook.com</span></a></li>
+			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/tiwwe-icone.png'%}" alt="">twiter@twitter.com</span></a></li>
+		</ul>  
+		</div>
+		
+		<div class = "personalDetailColor"><h3><b>Billing Address</h3></div>
+		
+		
+
+	<form action = "{% url 'paymentMethods' %}" method = "GET">
+		 <input id = "billingShape" type="text" id="fname" name="fname" placeholder="Your Country"><br>
+		  <input id = "billingShape" type="text" id="fname" name="fname" placeholder="Pincode/ Zipcode"><br>
+		 <input id = "billingShape" type="text" id="fname" name="fname" placeholder="Address LIne 1"><br>
+		  <input id = "billingShape" type="text" id="fname" name="fname" placeholder="Address Line 2"><br>
+		   <input id = "billingShape" type="text" id="fname" name="fname" placeholder="Street"><br>
+				<div class = "submitButtons3">
+			<button type="button" class="btnLast">Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button type="submit" class= "btnLast">Save</button>
+	</form>	
+		
+	</div>
+</div>
+	
+	
+		{% endblock %}
