@@ -9,6 +9,7 @@
 </head>
 <body>
 <div class = "backImage">
+
 	<div class = "childBox">
 
 		<div class = "cartoonPic">
@@ -21,7 +22,14 @@
 			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/tiwwe-icone.png'%}" alt="">twiter@twitter.com</span></a></li>
 		</ul>  
 		</div>
-		
+		<div class = "linePosition">
+<hr class="new4">
+<div class = "dotPositionFull"><span class="dot"></span><br><p class = "h4Color">Personal details</p></div>
+<div class = "dotPosition1"><span class="dot1"></span><br><p class = "h4Color">Organization details</p></div>
+<div class = "dotPosition2"><span class="dot1"></span><br><p class = "h4Color">Billing address</p></div>
+<div class = "dotPosition3"><span class="dot1"></span><br><p class = "h4Color">Payment method</p></div>
+<div class = "dotPosition4"><span class="dot1"></span><br><p class = "h4Color">Change password</p></div>
+</div>
 		<div class = "personalDetailColor"><h3><b>Personal Details</h3></div>
 		<div class = "personalPhoto">
 	<form action = "{% url 'organizationDetails' %}" method = "GET">
@@ -30,10 +38,17 @@
   	<button class="btn1">UPLOAD</button>
  	<input type="file" onchange="preview()">
 	</div>
+	<script src="{% static 'ticketApp/JS/script.js'%}"></script>
 
-
+ 
 	
 		</div>
+<div class="drag-area">
+    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+    <span>Drag and Drop Documents</span>
+    <button>Upload</button>
+    <input type="file" hidden>
+  </div>
 		<div class = "detailIntro">
 
 			<div class = "labelColor"><label id = "labelFont" for="fname">Username</label>
@@ -53,6 +68,7 @@
 	
 
 		</div>
+
 		<div class = "submitButtons">
 			<button type="button" class="btnLast">Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<button type="submit" class= "btnLast">Save</button>

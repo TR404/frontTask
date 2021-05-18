@@ -15,17 +15,25 @@
 			<li><a href="#"><span><img class = "socialSiteImage" src="{% static 'ticketApp/IMAGES/tiwwe-icone.png'%}" alt="">twiter@twitter.com</span></a></li>
 		</ul>  
 		</div>
-		
+		<div class = "linePosition">
+<hr class="new4">
+<div class = "dotPositionFull"><span class="dot"></span><br><p class = "h4Color">Personal details</p></div>
+<div class = "dotPosition1"><span class="dot"></span><br><p class = "h4Color">Organization details</p></div>
+<div class = "dotPosition2"><span class="dot"></span><br><p class = "h4Color">Billing address</p></div>
+<div class = "dotPosition3"><span class="dot1"></span><br><p class = "h4Color">Payment method</p></div>
+<div class = "dotPosition4"><span class="dot1"></span><br><p class = "h4Color">Change password</p></div>
+</div>
 		<div class = "personalDetailColor"><h3><b>Billing Address</h3></div>
 		
 		
 
 	<form action = "{% url 'paymentMethods' %}" method = "GET">
+	<div class = "billingLocation">
 		 <input id = "billingShape" type="text" id="fname" name="fname" placeholder="Your Country"><br>
 		  <input id = "billingShape" type="text" id="fname" name="fname" placeholder="Pincode/ Zipcode"><br>
 		 <input id = "billingShape" type="text" id="fname" name="fname" placeholder="Address LIne 1"><br>
 		  <input id = "billingShape" type="text" id="fname" name="fname" placeholder="Address Line 2"><br>
-		   <input id = "billingShape" type="text" id="fname" name="fname" placeholder="Street"><br>
+		   <input id = "billingShape" type="text" id="fname" name="fname" placeholder="Street"><br></div>
 				<div class = "submitButtons3">
 			<button type="button" class="btnLast">Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<button type="submit" class= "btnLast">Save</button>
