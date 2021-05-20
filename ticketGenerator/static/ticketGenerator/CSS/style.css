@@ -366,7 +366,7 @@ header nav button:hover:before {
 	background-color: #006400;
 	height: 45px;
 	width: 45px;
-	margin: -31px -8px;
+	margin: -10px -8px;
 	position: absolute;
 
 }
@@ -682,7 +682,7 @@ font-size: 25px;
 	color: white;
 	font-size: 22px;
 	font-weight: bold;
-	bottom: -12em;
+	bottom: 1em;
 	left: 33em;
 	height: 40px;
 	width: 150px;
@@ -741,4 +741,6 @@ font-size: 25px;
 }
 
 /*		Offer Sticker		*/
+
+
 
