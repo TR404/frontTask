@@ -1,0 +1,67 @@
+<!-- Welcome Commander What's New on your Creative Mind' -->
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="author" content="SitePoint">
+
+	<link rel="stylesheet" href="{% static 'ticketGenerator/CSS/style.css'%}">
+<!--	<link rel="stylesheet" href="{% static 'ticketGenerator/CSS/bootstrap.css'%}">-->
+	<script src="{% static 'ticketGenerator/JS/script.js'%}"></script>
+	   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!--	<script src="{% static 'ticketGenerator/JS/jquery.js'%}"></script>-->
+<!--	<script src="{% static 'ticketGenerator/JS/bootstrap.js'%}"></script>-->
+	<link rel = "icon" href = "{% static 'ticketGenerator/IMAGES/logo.png'%}" type = "image/x-icon">
+
+</head>
+<body>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img class = "img1" src="{% static 'ticketGenerator/IMAGES/logo.png'%}" alt="">
+    </div>
+    <ul>
+      <li><a href="#">E-Booking</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact Us </a></li>
+      <li><a href="#">Reviews</a></li>
+      <li><a href="{% url 'index' %}">My Account</a></li>
+      <li><a href="#">Join Us</a></li>
+    </ul>
+  </nav>
+  <div class="user-detail">
+    <ul>
+      <li><a href="#" class="login-back">log in</a></li>
+      <li><a href="#">sing Up</a></li>
+    </ul>
+    
+  </div>
+
+
+
+<div class="social-media-icone">
+  <ul>
+    <li><a href="#"><span><img src="{% static 'ticketGenerator/IMAGES/google-icone.png'%}" alt=""></span></a></li>
+    <li><a href="#"><span><img src="{% static 'ticketGenerator/IMAGES/inp-licone.png'%}" alt=""></span></a></li>
+    <li><a href="#"><span><img src="{% static 'ticketGenerator/IMAGES/inst-icone.png'%}" alt=""></span></a></li>
+    <li><a href="#"><span><img src="{% static 'ticketGenerator/IMAGES/facebook-icone.png'%}" alt=""></span></a></li>
+    <li><a href="#"><span><img src="{% static 'ticketGenerator/IMAGES/tiwwe-icone.png'%}" alt=""></span></a></li>
+  </ul>
+  
+
+  
+</div>
+	
+	</header>
+	
+	{% block content %} {% endblock %}
+</body>
+</html>

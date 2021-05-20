@@ -1,0 +1,48 @@
+<!-- Welcome Commander What's New on your Creative Mind' -->
+
+{% extends 'ticketGenerator/basic.html' %}
+	{% block content %} 
+	{% load static %}
+	
+<div class = "tableArea">
+	<h2 class ="generateHeading">GENERATE NEW TICKET</h2>
+	<div class = "generatingLayout">
+		<p class = "formHeading">Your Ticket Details</p>
+		<p class = "formDiscription">Enter your ticket detail below. If you are reporting a problem, please remember to provide as much information that is relevant to the issue as possible</p>
+		
+		<p class = "formDiscription2">General Information</p>
+				
+		<div  class = "generateTable">
+			<label for=“inputWidth”>Full Name</label>
+			<input type = "text" class ="inputWidth"><br/><br/>
+			<label for=“inputWidth1”>Email</label>
+			<input type = "email" class ="inputWidth1"><br/></br>
+			<label for=“inputWidth2”>Priority</label>
+			<input type = "text" class ="inputWidth2">
+		</div>
+	
+		<p class = "formDiscription3">Contact</p>
+		<div  class = "generateTable1">
+			<label for=“inputWidth3”>Phone</label>
+			<input type = "number" class ="inputWidth3"><br/><br/>
+		</div>
+		
+		<p class = "formDiscription4">Message Detail</p>
+		<div  class = "generateTable2">
+			<label for=“inputWidth4”>Subject</label>
+			<input type = "text" class ="inputWidth4"><br/><br/>
+		</div>
+		<p class = "formDiscription5">Description</p>
+		<div  class = "generateTable3">
+			<label for=“inputWidth5”></label>
+			<input type = "text" class ="inputWidth5">
+		</div>
+
+		</div>	
+	</div>
+			<button type="button" class = "nextButtonDesignGenerator" value="caption" onclick="" ><a href ="{% url 'ticketGenerator:todayOffer' %}">Submit</a></button>
+	
+</div>	
+	
+	
+		{% endblock %}

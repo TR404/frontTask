@@ -1,0 +1,744 @@
+
+/*------------------- nav ---------*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+header nav .logo img{
+  
+	height: 85px;
+	width: 85px;
+}
+
+.socialSite {
+	height: 20px;
+	width: 20px;
+
+}
+
+
+
+header {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 20px;
+  z-index: 1;
+}
+
+header nav {
+  float: left;
+  width: 75%;
+  background: linear-gradient( 90deg, #78c543 0%, #79c541 100%);
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 0px 0px 50px 0px;
+}
+
+header nav .logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  height: 25px;
+  margin-top: -18px;
+}
+
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  width: auto;
+  line-height: 50px;
+  float: right;
+  padding: 0px 20px;
+}
+
+header nav ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0px 5px;
+  margin: 0px 5px;
+  transition: 0.5s all;
+  text-decoration: none;
+  transition-timing-function: linear;
+}
+
+header nav button:hover {
+  background: linear-gradient( 90deg, #4361bb 0%, #4759c7 100%);
+  transition: 0.5s all;
+  transition-timing-function: linear;
+}
+
+header nav button {
+  margin: 7px 20px;
+  padding: 10px 25px;
+  background: linear-gradient( 90deg, #4759c7 0%, #4361bb 100%);
+  border: unset;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+header nav button:focus {
+  outline: unset;
+}
+
+.user-detail {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+.cartoonPic {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.user-detail ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: right;
+  margin-right: 10px;
+}
+
+.user-detail ul li {
+  float: left;
+  margin: 0px 5px;
+  line-height: 50px;
+}
+
+.user-detail ul li a {
+  padding: 10px 20px;
+  background: linear-gradient( 90deg, #78c543 0%, #79c541 100%);
+  border: unset;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+header nav button:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: '';
+  color: #000 !important;
+  background: linear-gradient(to right top, #3f51b5, #2196f3);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+header nav button:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+
+header nav button:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+
+.user-detail ul li a.login-back {
+  background: linear-gradient( 90deg, #4759c7 0%, #4361bb 100%) !important;
+  text-decoration: none;
+}
+
+.user-detail ul li:hover a {
+  background: linear-gradient( 90deg, #4759c7 0%, #4361bb 100%) !important;
+  transition: 0.5s all;
+  transition-timing-function: linear;
+}
+
+
+/*----------------- Social Media icone  ------------------*/
+
+.social-media-icone {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  bottom: 20px;
+  right: 0;
+}
+
+.social-media-icone ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.social-media-icone ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	margin-right: 10px;
+}
+
+.social-media-icone ul li a {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.social-media-icone ul li a span {
+	  width: 35px;
+	  height: 35px;
+	  float: left;
+	  display: inline-block;
+	  border-radius: 50%;
+	  padding: 2px;
+	  background: #fff;
+}
+
+.social-media-icone ul li a span img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.img1{
+	height: 80%;
+	width:80%;
+
+}
+
+
+
+/* ---------------- tableArea -------------------- */
+
+
+.tableArea {
+	
+	position: relative;
+	margin: 6em;
+	height: 750px;
+	width: auto;
+	background-color: #d5d5f0;
+	border: 3px solid #79c541;
+	border-radius: 15px;
+
+}
+
+.tableLogo {
+
+	position: absolute;
+	right: 0em;
+  top: 1px;
+  height: 70px;
+  width: 800px;
+  background: transparent;
+ 
+
+}
+
+.h3Design {
+
+	margin-left: 20px;
+
+}
+
+.topnav {
+  overflow: hidden;
+  float: right;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid green;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid green;
+}
+
+.ticketSearch {
+
+  margin: 7px;	
+
+}
+
+/*		Search Box		*/
+
+.ticketSearch input[type=search] {
+  width: 500px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('/static/ticketGenerator/IMAGES/searchBar.png');
+  background-position: 450px 10px; 
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding: 10px 20px 11px 14px;
+}
+
+.searchParagrapg {
+	position: absolute;
+	margin: -40px 32em;
+	color: #9d9d9d;
+
+}
+
+
+/*		Add New Ticket			*/
+
+
+
+.buttonStart{
+	background-color: #78c543;
+	right: 1em;;
+	height: 45px;
+	width: 230px;
+	position: absolute;
+	
+}
+
+.buttonStart a {
+
+	color: #fff;
+	padding: 0px 5px;
+	margin: 0px 5px;
+	transition: 0.5s all;
+	text-decoration: none;
+	transition-timing-function: linear;
+}
+
+
+.plusSign {
+	color:white;
+	font-size: 35px;
+	background-color: #006400;
+	height: 45px;
+	width: 45px;
+	margin: -31px -8px;
+	position: absolute;
+
+}
+
+.tickteAdding {
+	color: white;
+	float: center;
+	display: inline;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 5em;
+	overflow: hidden
+
+}
+
+/*		Ticket Show Option		*/
+
+
+.ticketShowOption {
+
+	position: absolute;
+	margin: 0 2em;
+
+}
+
+.main {
+	display: inline;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	font-size: 20px;
+}
+		
+		/* Hide the default checkbox */
+input[type=checkbox] {
+	visibility: hidden;
+}
+		
+		/* Creating a custom checkbox
+		based on demand */
+.geekmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #d5d5f0;
+	border: solid #78c543;
+		}
+		
+	
+		
+	
+		/* Specify the background color to be
+		shown when checkbox is checked */
+.main input:checked ~ .geekmark {
+	background-color: green;
+}
+		
+		/* Checkmark to be shown in checkbox */
+		/* It is not be shown when not checked */
+.geekmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+		
+		/* Display checkmark when checked */
+.main input:checked ~ .geekmark:after {
+	display: block;
+}
+		
+		/* Styling the checkmark using webkit */
+		/* Rotated the rectangle by 45 degree and
+		showing only two border to make it look
+		like a tickmark */
+.main .geekmark:after {
+	left: 8px;
+	bottom: 3px;
+	width: 4px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 4px 4px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/*		Data Table		*/
+
+.tableData {
+
+	position: absolute;
+ 	margin: 3em;
+	height: 500px;
+	width: 1600px;
+	background-color: #d5d5f0;
+	border: 3px solid #79c541;
+	border-radius: 15px;
+
+}
+
+table {
+	width: 100%;
+}
+table, th, td {
+text-align: center;
+font-size: 25px;
+}
+
+
+
+.nextButtonDesign {
+
+	background-color: #79c541;
+	position: absolute;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	bottom: 1em;
+	left: 33em;
+	height: 40px;
+	width: 150px;
+  	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	 border-radius: 15px;
+  
+
+}
+
+
+.nextButtonDesign a {
+	color: #fff;
+	padding: 0px 5px;
+	margin: 0px 5px;
+	transition: 0.5s all;
+	text-decoration: none;
+	transition-timing-function: linear;
+}
+
+/*		Generate New Ticket Form		*/
+
+.generateHeading {
+
+	position: relative;
+	color: #79c541;
+	margin-left: 18em;
+	font-size: 35px;
+
+
+}
+
+.generatingLayout {
+
+	position: relative;
+	margin: 3em;
+	height: 550px;
+	width: auto;
+	background-color: #fff;
+	border: 3px solid #79c541;
+
+}
+
+.formHeading {
+
+	font-size: 30px;
+	color: #383333;
+	margin: 15px;
+}
+
+.formDiscription {
+
+	margin:  -16px 15px;
+	color: #413C3C;
+
+}
+
+/*		Form Tag Name		*/
+.formDiscription2 {
+
+	color: #4361bb;
+	font-weight: bold;
+	margin: 15px;
+	font-size: 20px;
+  
+}
+
+.formDiscription3 {
+
+	color: #4361bb;
+	font-weight: bold;
+	margin: 9em 15px;
+	font-size: 20px;
+  
+}
+
+.formDiscription4 {
+
+	color: #4361bb;
+	font-weight: bold;
+	margin: -6em 15px;
+	font-size: 20px;
+  
+}
+
+.formDiscription5 {
+
+	color: #4361bb;
+	font-weight: bold;
+	margin: 9em 15px;
+	font-size: 20px;
+  
+}
+
+/*		Form Input Content Designing		*/
+
+.inputWidth {
+	margin-left:5em;
+	width: 60%;
+	background-color: #d5d5f0;
+
+
+}
+
+.inputWidth1 {
+	margin-left:106px;
+	width: 60%;
+	background-color: #d5d5f0;
+
+
+}
+
+.inputWidth2 {
+	margin-left:93px;
+	width: 60%;
+	background-color: #d5d5f0;
+	
+
+}
+
+.inputWidth3{
+
+	margin-left:93px;
+	width: 60%;
+	background-color: #d5d5f0;
+
+}
+
+.inputWidth4{
+
+	margin-left:93px;
+	width: 60%;
+	background-color: #d5d5f0;
+
+}
+
+.inputWidth5{
+
+	margin-left:93px;
+	width: 60%;
+	height: 65px;
+	background-color: #d5d5f0;
+  
+
+}
+
+/*		Area Table Box		*/
+.generateTable {
+
+	position: absolute;
+	height: 180px;
+	width: 800px;
+	margin-left: 75px;
+
+}
+
+
+
+.generateTable1 {
+	position: absolute;
+	height: 50px;
+	width: 800px;
+	margin: -11em 75px;
+}
+
+.generateTable2 {
+	position: absolute;
+	height: 50px;
+	width: 800px;
+	margin: 8em 4em;
+}
+
+
+.generateTable3{
+
+	position: absolute;
+	height: 70px;
+	width: 800px;
+	margin: -13em 8em;
+
+}
+
+
+
+/*		Ticket Generator Next Button		*/
+
+.nextButtonDesignGenerator {
+
+	background-color: #79c541;
+	position: absolute;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	bottom: -12em;
+	left: 33em;
+	height: 40px;
+	width: 150px;
+  	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	 border-radius: 15px;
+
+}
+
+.nextButtonDesignGenerator a {
+	color: #fff;
+	padding: 0px 5px;
+	margin: 0px 5px;
+	transition: 0.5s all;
+	text-decoration: none;
+	transition-timing-function: linear;
+}
+
+/*		Today Offer Logo		*/
+
+.img2 {
+
+	position: absolute;
+	height: 630px;
+  width: 1800px;
+  margin: -3em;
+
+  
+
+}
+
+.img3 {
+  position: absolute;
+  height: 170px;
+  width: 250px;
+  margin: 1em 750px;
+  z-index: 1;
+ 
+
+
+}
+
+.offerBanner {
+
+	position: absolute;
+	z-index: 1;
+	margin: 135px 730px;
+	font-weight: bold;
+	font-size: 40px;
+	color: #fff;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: clip; 
+
+}
+
+/*		Offer Sticker		*/
+

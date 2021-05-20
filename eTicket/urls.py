@@ -21,6 +21,7 @@ from django.conf import settings
 from django.views.static import serve
 from ticketApp import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
@@ -30,6 +31,11 @@ urlpatterns = [
     path('billingAddress/', views.billingAddress, name = 'billingAddress'),
     path('paymentMethods/', views.paymentMethods, name = 'paymentMethods'),
     path('changePassword/', views.changePassword, name = 'changePassword'),
+    path('ticketGenerator/', include('ticketGenerator.urls')),
+
+    
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
